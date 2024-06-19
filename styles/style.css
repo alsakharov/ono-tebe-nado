@@ -74,7 +74,7 @@
   text-align: right;
   line-height: 110px;
 }
-.cover_description {
+.cover__description {
   display: flex;
   font-size: 22px;
 }
@@ -86,6 +86,7 @@
   margin: 0 79px 0 78px;
 }
 .bet-button {
+  margin: -15px 0px 0px -8px;
   line-height: 25.83px;
   cursor: pointer;
   padding: 12px 32px 11px 31px;
@@ -110,7 +111,7 @@
   gap: 25px;
 }
 .lots__card-list-item {
-  color: #fff;
+  color: white;
 }
 .lots__card-list-item .card-link {
   text-decoration: none;
@@ -126,12 +127,18 @@
 }
 .card_type_film {
   background: url(../images/card-lot-01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .card_type_book {
   background: url(../images/card-lot-02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .card_type_picture {
   background: url(../images/card-lot-03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .card__title {
   line-height: 26px;
