@@ -212,7 +212,8 @@
 }
 .footer__address {
   line-height: 24.3px;
-  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
   text-underline-offset: 4px;
 }
 .footer__menu {
@@ -221,6 +222,7 @@
 }
 .footer__menu-list {
   line-height: 21.13px;
+  font-size: 18px;
   list-style-type: none;
   text-underline-offset: 4px;
 }
