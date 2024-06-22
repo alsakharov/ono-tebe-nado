@@ -1,5 +1,5 @@
 .header {
-  padding: 92px 24px 96px;
+  padding: 92px 24px 93px;
   display: flex;
   justify-content: space-between;
 }
@@ -13,7 +13,7 @@
 }
 
 .header__menu {
-  padding: 47px 36px 40px 26.52px;
+  padding: 44px 36px 40px 26.52px;
 }
 
 .header__links-list {
@@ -40,7 +40,7 @@
     text-underline-offset: 4px;
 }
 .header__address {
-  padding: 8px 63px 0px 183px;
+  padding: 6px 62px 0px 183px;
 }
 
 .overlay {
@@ -63,7 +63,7 @@
   position: relative;
   z-index: 2;
   color: white;
-  padding: 145px 50px 135px;
+  padding: 145px 50px 136px;
   font-size: 100px;
   letter-spacing: 30px;
 
@@ -105,11 +105,11 @@
   z-index: 2;
   color: white;
   font-size: 22px;
-  padding: 0px 50px 50px 75px;
+  padding: 0px 50px 50px 77px;
 }
 
 .cover__description-text {
-  padding-right: 79px;  
+  padding-right: 77px;  
   display: inline-block;
   font-size: 22px;
   line-height: 28px;
@@ -150,7 +150,7 @@
 
 .lots__card-list-item {
   color: white;
-  max-width: 334px;
+  
   
 }
 
@@ -165,9 +165,9 @@
   flex-direction: column;
   padding: 51px 40px 48px;
   min-height: 563px;
-  background-size: cover;
-  background-position: center;
-  
+  max-width: 334px;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .card_type_film {
@@ -268,11 +268,11 @@
 }
 
 .footer__address {
-
+  padding-right: 20px;
 }
 
 .footer__menu {
-  padding-left: 50px;
+  padding-left: 20px;
   text-align: center;
 }
 
