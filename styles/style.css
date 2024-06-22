@@ -13,13 +13,13 @@
 }
 
 .header__menu {
-  padding: 44px 36px 40px 26.52px;
+  padding: 47px 36px 40px 26.52px;
 }
 
 .header__links-list {
   list-style-type: circle;
   display: flex;
-  gap: 30px;
+  gap: 33px;
   line-height: 21.13px;
   font-size: 18px;
   text-underline-offset: 4px;
@@ -33,18 +33,19 @@
   text-decoration: none;
 }
 
+.address{
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24.3px;
+    text-underline-offset: 4px;
+}
 .header__address {
-  padding: 5px 60px 2px 184px;
-  line-height: 24.3px;
-  font-size: 18px;
-  font-style: normal;
-  text-underline-offset: 4px;
-
+  padding: 8px 63px 0px 183px;
 }
 
 .overlay {
   inset: 0;
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -54,64 +55,69 @@
 .cover {
   position: relative;
   text-transform: uppercase;
-  height: 757px;
   background: url("../images/cover.jpg") no-repeat center / cover;
+  
 }
 
 .cover__title {
   position: relative;
   z-index: 2;
   color: white;
-  padding: 165px 50px 147px;
+  padding: 145px 50px 135px;
   font-size: 100px;
-  line-height: 115px;
   letter-spacing: 30px;
+
 }
+.aligned-text {
+    padding-top: 20px;
+    display: block;
+    line-height: 115%;
+  }
+  
+  .aligned-text_center {
+    display: block;
+    text-align: center;
+    line-height: 100%;
+   
+  }
+  
+  .aligned-text_right {
+    display: block;
+    text-align: right;
+    line-height: 100%;
+  }
 
 .letter-spacing-extended {
   letter-spacing: 60px;
 }
 .min-letter-spacing {
-    letter-spacing: 20px;
-  }
+  letter-spacing: 20px;
+}
 .no-letter-spacing {
   letter-spacing: 0px;
 }
 
-.aligned-text {
-  display: block;
-}
-
-.aligned-text_center {
-  display: block;
-  text-align: center;
-  line-height: 130px;
-}
-
-.aligned-text_right {
-  display: block;
-  text-align: right;
-  line-height: 110px;
-}
-
 .cover__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 2;
   color: white;
-  display: flex;
   font-size: 22px;
+  padding: 0px 50px 50px 75px;
 }
 
 .cover__description-text {
+  padding-right: 79px;  
   display: inline-block;
   font-size: 22px;
   line-height: 28px;
-  word-spacing: 20px;
-  margin: 0 79px 0 78px;
+  word-spacing: 19px;
+ 
 }
 
 .bet-button {
-  
   line-height: 25.83px;
   cursor: pointer;
   padding: 12px 32px 11px 31px;
@@ -131,16 +137,21 @@
   text-transform: uppercase;
   line-height: 47px;
   font-size: 40px;
+  
 }
 
 .lots__card-list {
   display: flex;
   list-style-type: none;
   gap: 25px;
+  flex-wrap: wrap;
+  
 }
 
 .lots__card-list-item {
   color: white;
+  max-width: 334px;
+  
 }
 
 .card-link {
@@ -153,26 +164,22 @@
   display: flex;
   flex-direction: column;
   padding: 51px 40px 48px;
-  width: 334px;
-  height: 563px;
+  min-height: 563px;
+  background-size: cover;
+  background-position: center;
+  
 }
 
 .card_type_film {
   background: url(../images/card-lot-01.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background: url(../images/card-lot-02.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background: url(../images/card-lot-03.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .card__title {
@@ -209,21 +216,22 @@
 }
 
 .about__column {
-  height: 595px;
+  min-width: 1100px;
+  min-height: 595px;
   display: grid;
   grid-template:
-    "logo title" 283px
-    ".    posts" 312px
-    / 354px 692px;
+    "logo title" 280px
+    ".    posts" 
+    / 32.5% 67.5%;
 }
 
 .about__logo {
-  margin: 33px 46px;
+  grid-area: logo;
+  width: 254px;
+  height: 240px;
+  margin: 40px 36px;
   align-content: center;
   text-align: center;
-  width: 240px;
-  height: 240px;
-  grid-area: logo;
   border-radius: 50%;
   background: black;
 }
@@ -234,9 +242,9 @@
 }
 
 .about__title {
-  padding: 28px 5px 0px;
-  align-content: center;
   grid-area: title;
+  padding: 42px 0px 0px;
+  align-content: center;
   font-size: 40px;
   text-transform: uppercase;
   line-height: 46.96px;
@@ -244,10 +252,9 @@
 
 .about__text {
   grid-area: posts;
+  width: 692px;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 24px;
-  margin-left: 5px;
 }
 
 .about__text-p {
@@ -261,10 +268,7 @@
 }
 
 .footer__address {
-  line-height: 24.3px;
-  font-size: 18px;
-  font-style: normal;
-  text-underline-offset: 4px;
+
 }
 
 .footer__menu {
