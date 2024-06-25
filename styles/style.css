@@ -64,27 +64,24 @@
   position: relative;
   z-index: 2;
   color: white;
-  padding: 145px 50px 136px;
+  padding: 165px 50px 136px;
   font-size: 100px;
   letter-spacing: 0.3em;
-}
-
-.aligned-text {
-  padding-top: 20px;
-  display: block;
   line-height: 115%;
 }
 
-.aligned-text_center {
+.aligned-text {
   display: block;
-  text-align: center;
+  padding-top: 20px;
   line-height: 100%;
 }
 
+.aligned-text_center {
+  text-align: center;
+}
+
 .aligned-text_right {
-  display: block;
   text-align: right;
-  line-height: 100%;
 }
 
 .letter-spacing-extended {
